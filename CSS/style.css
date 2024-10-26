@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282828;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ed3f29;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.section {
+    background-color: #3b3b3b;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #ed3f29;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #555;
+}
+
+.section ul li img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 35%;
+    transition: transform 0.3s ease;
+}
+
+.section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.section ul li:hover img {
+    transform: scale(1.1);
+}
+
+.section ul li:hover a {
+    color: #ed3f29;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.ia-name {
+    font-size: 2.3rem;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.ia-container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.ia-container img {
+    margin-right: 15px;
+}
+
+.ia-container span {
+    position: relative;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section ul li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section ul li img {
+        margin-bottom: 10px;
+    }
+}
